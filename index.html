@@ -7,6 +7,10 @@
     <title>HomeSmart</title>
     <link rel="stylesheet" href="style.css" />
     <link rel="icon" href="./images/logomark.svg" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
   </head>
   <body>
     <section class="Header">
@@ -42,7 +46,9 @@
       <div class="info__container">
         <img src="./images/dots.svg" alt="dots" />
         <div class="info__container--item">
-          <div class="rounded"></div>
+          <div class="rounded">
+            <i class="fa fa-key" aria-hidden="true"></i>
+          </div>
           <h3>Safe</h3>
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil,
@@ -50,16 +56,20 @@
           </p>
         </div>
         <div class="info__container--item">
-          <div class="rounded"></div>
-          <h3>Safe</h3>
+          <div class="rounded">
+            <i class="fa fa-paypal" aria-hidden="true"></i>
+          </div>
+          <h3>Easy Payments</h3>
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil,
             facilis?
           </p>
         </div>
         <div class="info__container--item">
-          <div class="rounded"></div>
-          <h3>Safe</h3>
+          <div class="rounded">
+            <i class="fa fa-lightbulb-o" aria-hidden="true"></i>
+          </div>
+          <h3>Anytime</h3>
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil,
             facilis?
@@ -68,5 +78,91 @@
         <img src="./images/dots.svg" alt="dots" />
       </div>
     </section>
+
+    <section class="partners">
+      <div class="partners__description">
+        <h2>Our Partners</h2>
+        <p>
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Magnam atque
+          iusto accusamus consequuntur nulla? Dolores quasi nobis aut temporibus
+          ipsum?
+        </p>
+      </div>
+
+      <div class="partners__logo">
+        <div class="logo__container">
+          <img src="./images/spotify.svg" alt="spotify" />
+        </div>
+        <div class="logo__container">
+          <img src="./images/dell.svg" alt="del" />
+        </div>
+        <div class="logo__container">
+          <img src="./images/cisco.svg" alt="cisco" />
+        </div>
+        <div class="logo__container">
+          <img src="./images/disney.svg" alt="disney" />
+        </div>
+        <div class="logo__container">
+          <img src="./images/deezer.svg" alt="deezer" />
+        </div>
+        <div class="logo__container">
+          <img src="./images/verizon.svg" alt="verizon" />
+        </div>
+        <div class="logo__container">
+          <img src="./images/texas.svg" alt="texas" />
+        </div>
+      </div>
+    </section>
+
+    <section class="section__three">
+      <div class="description">
+        <h2>Relax, You're Home!</h2>
+        <p>
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Rerum dolore
+          voluptatem dolores optio sed ut rem, libero expedita quam ex.
+        </p>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Id similique
+          tempora minima eaque cum libero voluptatibus ex! Voluptates, corrupti
+          ducimus.
+        </p>
+
+        <a href="#" class="btn__signup--small">Sign Up</a>
+      </div>
+
+      <div class="image">
+        <img src="./images/table.png" alt="table" />
+        <div class="rounded--big"></div>
+      </div>
+    </section>
+
+    <footer>
+      <div class="image">
+        <img src="/images/lamp.png" alt="lamp" class="lamp" />
+        <a href="#" class="btn__download">Downoad The App</a>
+        <img src="./images/app.svg" alt="app" class="app--footer" />
+      </div>
+
+      <form action="form-handler.php" method="post">
+        <h2>Contact Us</h2>
+        <label for="name">enter name</label>
+        <input
+          type="text"
+          name="name"
+          id="name"
+          placeholder="Enter Your Name"
+          required
+        />
+        <label for="name">enter mail</label>
+        <input
+          type="email"
+          name="email"
+          placeholder="Enter email address"
+          required
+        />
+        <textarea rows="8" name="message" placeholder="Message"></textarea>
+        <a href="#" class="btn__signup--footer">Sign Up</a>
+      </form>
+    </footer>
   </body>
 </html>

@@ -51,15 +51,18 @@ body {
   list-style-type: none;
 }
 
+.nav__links li:not(:last-child) {
+  margin-right: 2rem;
+}
+
 .nav__links li a {
   color: var(--color-black);
   text-decoration: none;
   font-size: 2rem;
   text-transform: uppercase;
 }
-
-.nav__links li:not(:last-child) {
-  margin-right: 2rem;
+.nav__links li a:hover {
+  opacity: 0.5;
 }
 
 .btn__container {
@@ -70,6 +73,10 @@ body {
 
 .btn__container a:not(:last-child) {
   margin-right: 2rem;
+}
+
+.btn__container a:hover {
+  opacity: 0.8;
 }
 
 .btn__login {
@@ -131,6 +138,7 @@ body {
   padding: 1rem 1.5rem;
   border-radius: 0.4rem;
   font-weight: 600;
+  box-shadow: 4px 7px 19px -3px rgba(0, 0, 0, 0.38);
   transition: all 0.3s;
 }
 .btn__download:hover {
@@ -153,19 +161,220 @@ body {
   flex-direction: column;
   align-items: center;
   text-align: center;
-  justify-content: space-evenly;
+  /* justify-content: space-evenly; */
 }
 
 .rounded {
   width: 8rem;
   height: 8rem;
-  border-width: thick;
-  border: solid var(--color-yellow-dark);
+  border: 5px solid var(--color-yellow-dark);
   border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.info__container--item,
-h3,
+.rounded i {
+  color: var(--color-black);
+  transform: scale(1.7);
+}
+
+.info__container--item h3,
 p {
   color: var(--color-black);
+  margin-top: 2rem;
+}
+
+/* STEP SECTION PARTNERS */
+
+.partners {
+  min-height: 50rem;
+  min-width: 90vw;
+  background-color: var(--color-black);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.partners__description {
+  width: 35vw;
+  margin-top: 4rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.partners__description h2 {
+  color: var(--color-yellow-dark);
+  font-size: 3rem;
+}
+
+.partners__description p {
+  color: var(--color-white);
+  font-size: 1.7rem;
+  margin-bottom: 5rem;
+  line-height: 3rem;
+}
+
+.partners__logo {
+  width: 40vw;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  row-gap: 4rem;
+  column-gap: 4rem;
+}
+
+.logo__container {
+  width: 100px;
+  height: 100px;
+  background-color: var(--color-white);
+  border-radius: 0.4rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo__container img {
+  width: 80px;
+}
+
+/* STEP SECTION THREE */
+
+.section__three {
+  display: flex;
+  color: var(--color-black);
+  justify-content: center;
+}
+
+.section__three .description {
+  flex-basis: 40%;
+  margin-top: 20rem;
+  position: relative;
+}
+
+.section__three .description h2 {
+  font-size: 3rem;
+  font-weight: 600;
+}
+
+.section__three .description p {
+  font-size: 1.7rem;
+}
+
+.btn__signup--small {
+  text-decoration: none;
+  font-size: 1.5rem;
+  font-weight: bold;
+  position: absolute;
+  margin-top: 2rem;
+  padding: 1rem 1.3rem;
+  border-radius: 0.4rem;
+  color: var(--color-black);
+  background-color: var(--color-yellow-dark);
+  box-shadow: 4px 7px 19px -3px rgba(0, 0, 0, 0.38);
+}
+.btn__signup--small:hover {
+  color: var(--color-white);
+  background-color: var(--color-red-btn);
+}
+
+.section__three .image {
+  margin-top: 7rem;
+  display: flex;
+}
+
+.section__three .image img {
+  z-index: 20;
+}
+
+.section__three .image .rounded--big {
+  width: 35rem;
+  height: 35rem;
+  position: absolute;
+  border: 1rem solid var(--color-yellow-dark);
+  border-radius: 50%;
+  margin: 35rem 0 0 27rem;
+  z-index: 10;
+}
+
+/* STEP FOOTER */
+
+footer {
+  max-height: 600px;
+  min-width: 70vw;
+  display: flex;
+  margin-top: -5rem;
+  justify-content: space-evenly;
+  overflow-y: hidden;
+}
+
+footer .image {
+  display: flex;
+  flex-direction: column;
+}
+
+footer .image .app--footer {
+  width: 200px;
+  margin-top: 5rem;
+}
+
+footer .image a {
+  margin-top: 2rem;
+}
+
+footer form {
+  max-height: 370px;
+  width: 30vw;
+  margin-top: 20rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  border: 0.2rem solid var(--color-black);
+  border-radius: 0.8rem;
+  color: var(--color-black);
+  position: relative;
+}
+
+footer form h2 {
+  font-size: 2rem;
+  font-weight: bolder;
+  margin-top: 2rem;
+}
+
+footer form label {
+  font-size: 1.5rem;
+  padding: 0.5rem 0 0.5rem 0;
+}
+
+footer form > * {
+  margin-left: 2rem;
+}
+
+footer form textarea {
+  margin-top: 2rem;
+}
+
+footer form input,
+textarea {
+  width: 90%;
+  border: 2px solid var(--color-yellow-dark);
+  border-radius: 0.4rem;
+}
+
+.btn__signup--footer {
+  text-decoration: none;
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-top: 2rem;
+  padding: 1rem 1.3rem;
+  border-radius: 0.4rem;
+  color: var(--color-black);
+  background-color: var(--color-yellow-dark);
+  box-shadow: 4px 7px 19px -3px rgba(0, 0, 0, 0.38);
+}
+.btn__signup--footer:hover {
+  color: var(--color-white);
+  background-color: var(--color-red-btn);
 }
